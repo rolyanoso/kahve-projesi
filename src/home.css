@@ -1,0 +1,198 @@
+body{
+  overflow-x: hidden;
+  background-color: rgba(253, 251, 249, 0.925);
+}
+
+.sideBar{
+  background-color: rgba(119, 108, 94, 0.93);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  margin-left: 15px;
+  margin-top: 22px;
+}
+  
+.coffeeIcon{
+  width: 150px;
+  height: auto;
+  max-width: 100px;
+  margin-top: 80px;
+
+}
+hr{
+  
+  width: 99%;
+  height: 2px;
+  background-color: rgb(81, 71, 55);
+}
+.imageWrapper{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 16px;
+  margin-top: 24px;
+}
+@media (max-width: 900px){
+  .imageWrapper{
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+@media (max-width: 600px) {
+  .imageWrapper {
+    margin-left: 5px;
+    display: grid;
+    grid-template-columns: 1fr;
+    max-height: calc(100vh - 120px); /* üst header vs. varsa */
+    overflow-y: auto;
+    padding-right: 8px; /* scrollbar içerik üstüne binmesin diye */
+    
+  }
+}
+@media (max-width: 600px){
+  .sideBar{
+    height: 1055px;
+    width: 100%;
+    
+  }
+}
+.imageBtn{
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.imageList{
+  width: 100%;
+  display: block;
+  transition: transform 0.3s ease;
+}
+.imageList:hover{
+  cursor: pointer;
+  
+}
+.imageBox {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+}
+.imageBox:hover .imageList {
+  transform: scale(1.03);
+}
+.imageText{
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  background: rgba(0,0,0,0.5);
+  padding: 6px 10px;
+  border-radius: 8px;
+  text-shadow: 1px 2px 2px  black;
+  
+}
+
+.overlay{
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  opacity: 0;
+  transition: opacity 0.3 ease;
+}
+.imageBox:hover .overlay {
+  opacity: 1;
+}
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 24px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: start;
+  width: 100%;
+  text-align: center;
+}
+
+.menu li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 500;
+  color: #f1f0f0;
+  transition: background-color 0.25s ease, transform 0.2s ease;
+}
+
+/* hover efekti */
+.menu li:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+  transform: translateX(4px);
+}
+.menuIcon{
+  font-size: 18px;
+  color: #e1e0e0;
+}
+.socialMedia{
+  display: flex;
+  gap: 9px;
+  margin-top: 30px;
+  
+
+}
+.socialMedia a{
+  color: #e1e0e0;
+}
+.socialMediaIcon:hover{
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.116);
+  border-radius: 9px;
+  transform: translateX(4px);
+}
+.menuImages{
+  width: 80px;
+  height: 80px;
+  margin: 5px;
+  border-radius: 50%;
+  box-shadow: 5px 3px 5px 2px rgba(60, 51, 43, 0.866);
+  
+}
+
+.menuHR{
+  width: 90%;
+  height: 0.01px;
+ 
+}
+@keyframes coffeeSlideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-60px) scale(0.9) rotate(-4deg);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0) scale(1) rotate(0);
+  }
+}
+
+/* Basket scroll */
+.basketScroll::-webkit-scrollbar {
+  width: 6px;
+}
+
+.basketScroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.basketScroll::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #6f4e37, #a27454);
+  border-radius: 10px;
+}
+
+.alert-success {
+  background-color: #f6f7ed;
+  color: #1e4620;
+  border: 1px solid #b7dfb9;
+}
