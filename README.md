@@ -1,3 +1,12 @@
+# Coffee Shop Web Application
+
+🔗 Live Demo: https://coffeeareaapp.netlify.app/
+
+A modern coffee shop web application built with React and Next.js, focused on
+clean UI, responsive design, and real-world frontend workflows.
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
