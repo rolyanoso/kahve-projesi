@@ -78,8 +78,18 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
-## 📸 Screenshots
+## 🚀 Features
+- Responsive design
+- Product listing and basket
+- User authentication UI
+- Component-based structure
 
+## 🛠 Tech Stack
+- React
+- JavaScript
+- CSS
+
+## 📸 Screenshots
 ### Home Page
 ![Home Page](./projectPhotos/homePage.png)
 
